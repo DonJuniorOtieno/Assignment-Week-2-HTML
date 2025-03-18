@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HTML Lists, Images, Tables & Forms</title>
+        </head>
+        <body>
+            <h2>HTML Lists.</h2>
+            <h3>Ordered Lists</h3>
+            <ol type="i" start="10">
+                <li>Tom Isaac</li>
+                <li>Loren Biden</li>
+                <li>Precious Lina</li>
+                <li>Namuto Sheldon</li>
+                <li>Greg Lowa</li>
+            </ol>
+            <h2>HTML Images</h2>
+            <img src="buil.jpg" alt="Image of electrical wires" height="600" width="600">
+            <img src="https://images.pexels.com/photos/17584665/pexels-photo-17584665/free-photo-of-field-of-grass-in-the-wind.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" height="600" width="600">
+            <h3>HTML Tables</h3>
+            <table border="1">
+                <caption>Contact Table</caption>
+                <thead>
+                    <tr>
+                       <th>Name</th> 
+                       <th>Address</th> 
+                       <th>Mobile</th> 
+                       <th>Email</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Don Junior</td>
+                        <td>40400-250</td>
+                        <td>0766228899</td>
+                        <td>donjunior@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Ferdinand Bach</td>
+                        <td>44400-370</td>
+                        <td>0733778383</td>
+                        <td>ferdinand4@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Elon Musk</td>
+                        <td>00974-76</td>
+                        <td>0789765643</td>
+                        <td>eloniamusk@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Tom Isaac</td>
+                        <td>40400-987</td>
+                        <td>0754673929</td>
+                        <td>tomisaac@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Loren Biden</td>
+                        <td>40400-765</td>
+                        <td>0786543728</td>
+                        <td>lorenbiden@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Name</th> 
+                        <th>Address</th> 
+                        <th>Mobile</th> 
+                        <th>Email</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <form action="" method="">
+                <label for="full_name">Full Names:</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Enter your full names here" required>
+                <label for="Email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email address here" required>
+                <label for="Date">Date</label>
+                <input type="date" id="date" name="date">
+                <label for="Password">Enter Your Password</label>
+                <input type="password" id="password" name="password">
+                <br><br>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <br><br>
+                <label for="languages">Languages</label>
+                <input type="checkbox" name="languages" value="English">English
+                <input type="checkbox" name="languages" value="Swahili">Swahili
+                <input type="checkbox" name="languages" value="French">French
+                <br><br>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option>--Select Country--</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Register">
+                <button type="reset">Cancel</button>
+            </form>
+        </body>
+    </html>
+
