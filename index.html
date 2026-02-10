@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abduction Alert & Emergency System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Abduction Alert System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#alerts">Active Alerts</a></li>
+                    <li><a href="#emergency-list">Emergency List</a></li>
+                    <li><a href="#report">Report Incident</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="alerts">
+            <h2>Active Abduction Alerts</h2>
+            <div class="alert-grid">
+                <div class="alert-card urgent">
+                    <div class="alert-header">
+                        <span class="status">URGENT</span>
+                        <span class="time">2 hours ago</span>
+                    </div>
+                    <h3>Missing Child: Sarah Doe</h3>
+                    <p><strong>Last Seen:</strong> Central Park, 2:00 PM</p>
+                    <p><strong>Description:</strong> 8 years old, wearing a red jacket and blue jeans.</p>
+                    <button class="btn btn-primary">More Details</button>
+                </div>
+                <div class="alert-card">
+                    <div class="alert-header">
+                        <span class="status">ACTIVE</span>
+                        <span class="time">5 hours ago</span>
+                    </div>
+                    <h3>Suspected Vehicle Spotted</h3>
+                    <p><strong>Location:</strong> Oak Street</p>
+                    <p><strong>Description:</strong> Silver sedan, license plate XYZ-1234.</p>
+                    <button class="btn btn-primary">More Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="emergency-list">
+            <h2>Emergency Contact List</h2>
+            <div class="search-container">
+                <input type="text" id="contactSearch" placeholder="Search contacts (e.g., Police, Hospital)...">
+            </div>
+            <div class="table-responsive">
+                <table id="contactTable">
+                    <thead>
+                        <tr>
+                            <th>Organization</th>
+                            <th>Service</th>
+                            <th>Phone Number</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>National Police</td>
+                            <td>Emergency Dispatch</td>
+                            <td>911</td>
+                            <td><span class="status-badge online">24/7 Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>City General Hospital</td>
+                            <td>Ambulance & ER</td>
+                            <td>555-0199</td>
+                            <td><span class="status-badge online">24/7 Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Child Protection Services</td>
+                            <td>Child Welfare</td>
+                            <td>555-0200</td>
+                            <td><span class="status-badge online">24/7 Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Safe Haven NGO</td>
+                            <td>Victim Support</td>
+                            <td>555-0350</td>
+                            <td><span class="status-badge">8AM - 6PM</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="report">
+            <h2>Report an Incident</h2>
+            <div class="form-container">
+                <form id="reportForm">
+                    <div class="form-group">
+                        <label for="reporterName">Your Name</label>
+                        <input type="text" id="reporterName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="incidentType">Incident Type</label>
+                        <select id="incidentType" required>
+                            <option value="">--Select Type--</option>
+                            <option value="missing">Missing Person</option>
+                            <option value="suspicious">Suspicious Activity</option>
+                            <option value="attempt">Attempted Abduction</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Last Seen Location</label>
+                        <input type="text" id="location" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Incident Details</label>
+                        <textarea id="details" rows="4" placeholder="Provide as much detail as possible (descriptions, vehicle info, etc.)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit Report</button>
+                </form>
+                <div id="formMessage" class="hidden"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Abduction Alert System. Stay Safe.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
