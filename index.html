@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Safety</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Personal Safety</h1>
+        </div>
+        <div class="header-right">
+            <i class="fa-solid fa-circle-question"></i>
+            <i class="fa-solid fa-gear"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="sos-section">
+            <div class="sos-button-container">
+                <button id="sos-button" class="sos-button">
+                    <span class="sos-text">SOS</span>
+                    <span class="sos-subtext">Hold to Activate</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="card-section timer-section">
+            <div class="section-title">
+                <i class="fa-solid fa-stopwatch red-icon"></i>
+                <h2>Safety Timer</h2>
+            </div>
+            <div class="timer-controls">
+                <select id="timer-select">
+                    <option value="15">15 minutes</option>
+                    <option value="30">30 minutes</option>
+                    <option value="60">60 minutes</option>
+                </select>
+                <button id="start-timer-btn" class="primary-btn">Start Timer</button>
+            </div>
+        </section>
+
+        <section class="card-section contacts-section">
+            <div class="section-title">
+                <i class="fa-solid fa-user-shield red-icon"></i>
+                <h2>Emergency Contacts</h2>
+            </div>
+            <div class="add-contact">
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="text" id="contact-input" placeholder="Add Contact Number">
+                </div>
+                <button id="add-contact-btn" class="add-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <ul id="contact-list" class="contact-list">
+                <li class="contact-item">
+                    <div class="contact-info">
+                        <div class="contact-icon-bg"><i class="fa-solid fa-user"></i></div>
+                        <span>999</span>
+                    </div>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                </li>
+                <li class="contact-item">
+                    <div class="contact-info">
+                        <div class="contact-icon-bg"><i class="fa-solid fa-user"></i></div>
+                        <span>112</span>
+                    </div>
+                    <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card-section quick-actions-section">
+            <div class="section-title">
+                <i class="fa-solid fa-shield-halved red-icon"></i>
+                <h2>Quick Actions</h2>
+            </div>
+            <div class="actions-grid">
+                <div class="action-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Fake Call</span>
+                </div>
+                <div class="action-card">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <span>AI Companion</span>
+                </div>
+                <div class="action-card">
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <span>Navigate</span>
+                </div>
+                <div class="action-card">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                    <span>Voice Record</span>
+                </div>
+                <div class="action-card">
+                    <i class="fa-solid fa-barcode"></i>
+                    <span>AI Environment Scanner</span>
+                </div>
+                <div class="action-card">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Trusted Networks</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="fab-settings">
+        <i class="fa-solid fa-gear"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

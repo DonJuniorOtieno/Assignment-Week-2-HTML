@@ -1,0 +1,301 @@
+:root {
+    --primary-red: #d32f2f;
+    --primary-red-hover: #b71c1c;
+    --bg-light: #f9f9f9;
+    --card-bg: #ffffff;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --accent-pink: #fff5f5;
+    --border-color: #eeeeee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+header {
+    background-color: var(--primary-red);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header-right i {
+    margin-left: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 15px;
+}
+
+.sos-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.sos-button-container {
+    width: 180px;
+    height: 180px;
+    background-color: rgba(211, 47, 47, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sos-button {
+    width: 150px;
+    height: 150px;
+    background-color: var(--primary-red);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(211, 47, 47, 0.4);
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.sos-button:active {
+    transform: scale(0.95);
+    background-color: var(--primary-red-hover);
+}
+
+.sos-text {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sos-subtext {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.card-section {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.red-icon {
+    color: var(--primary-red);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+/* Timer Section */
+.timer-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    font-size: 0.9rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+.primary-btn {
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Contacts Section */
+.add-contact {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0 10px;
+}
+
+.input-wrapper i {
+    color: var(--text-light);
+    margin-right: 10px;
+}
+
+.input-wrapper input {
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.add-btn {
+    background-color: white;
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+    width: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon-bg {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-red);
+    color: white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 0.8rem;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: var(--primary-red);
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Quick Actions Section */
+.actions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.action-card {
+    background-color: var(--accent-pink);
+    border-radius: 12px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-card:hover {
+    background-color: #ffdada;
+}
+
+.action-card i {
+    font-size: 1.5rem;
+    color: var(--primary-red);
+}
+
+.action-card span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Floating Action Button */
+.fab-settings {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e0e0ff;
+    color: #4a4a8c;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 200;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    body {
+        max-width: 100%;
+    }
+}
