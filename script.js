@@ -56,4 +56,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000);
         });
     }
+
+    // SOS Button Logic
+    const sosButton = document.getElementById('sosButton');
+    const sosModal = document.getElementById('sosModal');
+    const sosCountdown = document.getElementById('sosCountdown');
+    const cancelSos = document.getElementById('cancelSos');
+    let countdownInterval;
+
+    if (sosButton && sosModal) {
+        sosButton.addEventListener('click', () => {
+            sosModal.classList.remove('hidden');
+            let count = 5;
+            sosCountdown.innerText = count;
+
+            countdownInterval = setInterval(() => {
+                count--;
+                sosCountdown.innerText = count;
+                if (count <= 0) {
+                    clearInterval(countdownInterval);
+                    sosCountdown.innerText = "SENT";
+                    sosCountdown.style.fontSize = "2rem";
+                    setTimeout(() => {
+                        sosModal.classList.add('hidden');
+                        sosCountdown.style.fontSize = "4rem";
+                    }, 2000);
+                }
+            }, 1000);
+        });
+    }
+
+    if (cancelSos && sosModal) {
+        cancelSos.addEventListener('click', () => {
+            clearInterval(countdownInterval);
+            sosModal.classList.add('hidden');
+        });
+    }
 });
