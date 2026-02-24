@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+}
+
+#sos-section {
+    margin-bottom: 30px;
+}
+
+.sos-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 77, 77, 0.4);
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.sos-btn:hover {
+    background-color: #e60000;
+}
+
+.sos-btn:active {
+    transform: scale(0.95);
+}
+
+.alert-status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #e60000;
+    height: 1.5em;
+}
+
+#contacts-section {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#contacts-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#contact-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#contact-list li {
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #eee;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
